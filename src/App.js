@@ -27,13 +27,13 @@ const App = () => {
 		getMovieRequest(searchValue);
 	}, [searchValue]);
 
-	useEffect(() => {
-		const movieFavourites = JSON.parse(
-			localStorage.getItem('react-movie-app-favourites')
-		);
+	// useEffect(() => {
+	// 	const movieFavourites = JSON.parse(
+	// 		localStorage.getItem('react-movie-app-favourites')
+	// 	);
 
-		setFavourites(movieFavourites);
-	}, []);
+	// 	setFavourites(movieFavourites);
+	// }, []);
 
 	const saveToLocalStorage = (items) => {
 		localStorage.setItem('react-movie-app-favourites', JSON.stringify(items));
